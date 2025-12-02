@@ -22,7 +22,7 @@ When an obstacle hits the player the microcontroller goes into sleep mode. A new
 
 ## Make your own
 RunTiny needs just three components in its simplest form:
-- ATtiny10 (and breakout board)
+- ATtiny9 (and breakout board)
 - OLED Display 128x31 (SSD1306)
 - Push-button
 
@@ -30,7 +30,7 @@ plus some wires, a breadboard and a power source.
 ![RunTiny - ATtiny10 Game](./assets/RunTiny_game.jpg)
 
 ### Wiring
-The ATtiny10 has 3 usable I/O (PB3 is the reset) and are all used as follows:
+The ATtiny9 has 3 usable I/O (PB3 is the reset) and are all used as follows:
 - PB0: SDA
 - PB1: SCL
 - PB2: Push-button (INT0)
@@ -55,8 +55,5 @@ Be sure the USBASP jumper is set on 5V and the firmware is up to date (the firmw
 
 Use this command (mind the paths of avrdude and its config file):
 ```
-./avrdude -e -v -p attiny10 -C ./avrdude.conf -c usbasp -U flash:w:firmware.hex:i -P usb
+./avrdude -e -v -p attiny9 -C ./avrdude.conf -c usbasp -U flash:w:firmware.hex:i -P usb
 ```
-
-## ATtiny85 and more
-The game should work on other AVR devices (i.e. ATtiny85) with minor changes (not tested yet though).
