@@ -1,5 +1,5 @@
 # RunTiny
-Endless runner game developed for the AVR ATtiny10 microcontroller and a 128x32 monochrome OLED Display.
+Endless runner game developed for the AVR ATtiny9 microcontroller and a 128x32 monochrome OLED Display.
 
 
 The entire code is written in assembly to optimize the space and fit it into the 1kB flash memory. 
